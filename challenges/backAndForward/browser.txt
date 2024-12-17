@@ -1,0 +1,31 @@
+
+Initialize:
+    backStack = empty stack
+    forwardStack = empty stack
+    currentPage = null
+
+Function visit(page):
+    If currentPage is not null:
+        Push currentPage onto backStack
+    Clear forwardStack
+    Set currentPage = page
+    Print "Visited:", currentPage
+
+Function back():
+    If backStack is not empty:
+        Push currentPage onto forwardStack
+        Set currentPage = Pop from backStack
+        Print "Back to:", currentPage
+    Else:
+        Print "No pages in back history"
+
+Function forward():
+    If forwardStack is not empty:
+        Push currentPage onto backStack
+        Set currentPage = Pop from forwardStack
+        Print "Forward to:", currentPage
+    Else:
+        Print "No pages in forward history"
+
+Function displayCurrentPage():
+    Print "Current Page:", currentPage

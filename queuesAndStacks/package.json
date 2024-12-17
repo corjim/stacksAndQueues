@@ -1,0 +1,11 @@
+{
+  "name": "queuesandstacks",
+  "version": "1.0.0",
+  "description": "ADT implementation of Queues and Stacks",
+  "main": "queue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "corjim",
+  "license": "ISC"
+}
